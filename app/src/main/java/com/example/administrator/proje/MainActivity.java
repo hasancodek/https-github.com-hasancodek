@@ -10,8 +10,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //deneme ali
+
     }
     public void deneme1(){
         int x;
+        x=5+7; //deneme commit zeynep
     }
+
+
 }
