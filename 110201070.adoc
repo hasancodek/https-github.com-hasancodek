@@ -1,0 +1,2 @@
+= Merhaba
+bu dosyada projeye dair planlarım ve iş bölümlerim yer alacak
