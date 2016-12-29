@@ -1,4 +1,4 @@
-package com.example.administrator.proje;
+package com.example.erdogan.kullanici_hesabi;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,8 +6,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-
-import com.example.erdogan.kullanici_hesabi.R;
 
 public class LoginActivity extends ActionBarActivity {
 
@@ -53,3 +51,4 @@ public class LoginActivity extends ActionBarActivity {
         return output;
     }
 }
+
