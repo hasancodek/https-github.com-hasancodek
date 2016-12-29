@@ -1,0 +1,29 @@
+:imagesdir: resimler
+
+# Basit Bir Kullanıcı Hesabı Oluşturma Uygulaması
+
+
+==== Özet :
+   Yapılan uygulama basit bir Login uygulamasıdır. Buna göre kullanıcı, kullanıcı adını ve şifresini doğru girerse basit bir hoşgeldiniz ekranı
+   kullanıcıyı karşılar. Eğer kullanıcının tanımlı bir hesabı yoksa yeni bir hesap oluşturabilir. Yeni hesap oluşturduğu zaman login kısmında olduğu
+   yine bir hoşgeldiniz ekranı kullanıcıyı karşılar.
+   
+   Yeni kayıt oluşturan bir kullanıcı bilgileri web servis yardımıyla veritabanına aktarılır. Aynı şekilde giriş yapmaya çalışan kullanıcının bilgileri de
+   veritabanından çekilerek kontrol edilir. Eğer uyuşma sağlanırsa başarılı bir şekilde giriş gerçekleştirilir.
+
+
+== Splash Screen
+
+Uygulamada 1 sn lik bir bekleme yapıp Login Ekranına yönlendirilir.
+
+
+image::rsm_splash.png[splash,180,320,align="center"]
+
+
+== Login
+
+Uygulama Kullanıcısının Ad, Soyad,Yas ve TC kimlik No Bilgileri alınarak guvenlik sağlaması için kullanılır.
+Alınan Bilgilerin dogruğu sağlantıktan Sonra Uygulamaya giriş sağlanır.
+
+
+image::rsm_login.png[Login,180,320,align="center"]
