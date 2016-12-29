@@ -1,5 +1,0 @@
-= Ali Şen
-
-== Projede Yaptıklarım
-
-. Web servis rest
