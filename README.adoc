@@ -4,12 +4,14 @@
 
 
 ==== Özet :
-   Yapılan uygulama basit bir Login uygulamasıdır. Buna göre kullanıcı, kullanıcı adını ve şifresini doğru girerse basit bir hoşgeldiniz ekranı
-   kullanıcıyı karşılar. Eğer kullanıcının tanımlı bir hesabı yoksa yeni bir hesap oluşturabilir. Yeni hesap oluşturduğu zaman login kısmında olduğu
-   yine bir hoşgeldiniz ekranı kullanıcıyı karşılar.
+   Yapılan uygulama basit bir Login uygulamasıdır. Buna göre kullanıcı, kullanıcı adını ve şifresini doğru
+   girerse basit bir hoşgeldiniz ekranı kullanıcıyı karşılar. Eğer kullanıcının tanımlı bir hesabı yoksa 
+   yeni bir hesap oluşturabilir. Yeni hesap oluşturduğu zaman login kısmında olduğu yine bir hoşgeldiniz 
+   ekranı kullanıcıyı karşılar.
    
-   Yeni kayıt oluşturan bir kullanıcı bilgileri web servis yardımıyla veritabanına aktarılır. Aynı şekilde giriş yapmaya çalışan kullanıcının bilgileri de
-   veritabanından çekilerek kontrol edilir. Eğer uyuşma sağlanırsa başarılı bir şekilde giriş gerçekleştirilir.
+   Yeni kayıt oluşturan bir kullanıcı bilgileri web servis yardımıyla veritabanına aktarılır. 
+   Aynı şekilde giriş yapmaya çalışan kullanıcının bilgileri de veritabanından çekilerek kontrol 
+   edilir. Eğer uyuşma sağlanırsa başarılı bir şekilde giriş gerçekleştirilir.
 
 
 == Splash Screen
