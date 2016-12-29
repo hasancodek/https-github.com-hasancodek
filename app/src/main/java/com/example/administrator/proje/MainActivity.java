@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     public void deneme1(){
         int x;
         x=5+7; //deneme commit zeynep
+
+        //dejbdkjngf
     }
 
 
