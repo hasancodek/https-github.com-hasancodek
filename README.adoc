@@ -38,3 +38,12 @@ alınan bilgiler web servis ile veri tabanına eklenir.
 
 
 image::kayit.png[Kayıt Sayfası,180,320,align="center"]
+
+
+== Hoşgeldiniz Sayfası
+
+Bu sayfa kullanıcı hesabına başarıyla giriş yaptığında veya kullanıcı başarıyla yeni bir hesap oluşturduğunda
+çalışmaktadır.
+
+
+image::hosgeldiniz.png[Hoşgeldiniz Sayfası,180,320,align="center"]
