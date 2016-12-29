@@ -1,0 +1,43 @@
+= Erdoğan CİVİL
+
+== Projede Yaptıklarım
+
+
+. Splash Screen
+. Web Servis 
+
+
+=== 1)Splash Screen
+
+1. Uygulamanın açılması ile başlayan ufak bir zaman dilimi ile kullanıcıya
+uygulama ile ilgili bir tanıtım,logo vb bir ekranı gösterme.
+
+[source , java  ]
+-----
+public class SplashActivity extends Activity {
+
+
+    private static int SPLASH_TIME_OUT = 1000;    <1>
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splash);
+        startHandler();
+
+    }
+    public void startHandler(){
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                intetLogin  =new Intent(getApplicationContext(),Login.class);
+                 startActivity(intetLogin);
+
+                finish();
+            }
+        }, SPLASH_TIME_OUT);
+    }
+
+}
+-----
