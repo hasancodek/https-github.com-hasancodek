@@ -2,16 +2,11 @@
 
 == Projede Yaptıklarım
 
-
-. Android LifeCycle
+   Android LifeCycle
    
    Projede oluşturduğum Finish butonu ile projenin yaşam döngüsünü oluşturdum.
-   Toast komutut-ylada ekrana yazdırma işlemini gerçekleştirdim.
+   Toast komutu ile ekrana yazdırma işlemini gerçekleştirdim.
    
-
-=== 
-
-
 
 [source , java  ]
 -----
