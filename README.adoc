@@ -21,10 +21,20 @@ Uygulamada 3 sn lik bir bekleme yapılır. Ardından üye girişi ekranına yön
 image::splashscreen.png[Splash Screen,180,320,align="center"]
 
 
-== Login
+== Giriş Sayfası
 
-Uygulama Kullanıcısının Ad, Soyad,Yas ve TC kimlik No Bilgileri alınarak guvenlik sağlaması için kullanılır.
-Alınan Bilgilerin dogruğu sağlantıktan Sonra Uygulamaya giriş sağlanır.
+Burada kullanıcı, kullanıcı adı ve şifresini girer. Eğer kullanıcı adı ve şifresi veritabanından
+çekilen bilgilerle uyuşuyorsa giriş sağlanır
 
 
-image::rsm_login.png[Login,180,320,align="center"]
+image::giris.png[Giriş Sayfası,180,320,align="center"]
+
+
+
+== Kayıt Sayfası
+
+Burada daha önceden hesabı olmayan kullanıcılar için hesap oluşturulur. Kullanıcıdan, hesap oluştururken
+alınan bilgiler web servis ile veri tabanına eklenir.
+
+
+image::kayit.png[Kayıt Sayfası,180,320,align="center"]
