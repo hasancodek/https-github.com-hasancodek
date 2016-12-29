@@ -15,10 +15,10 @@
 
 == Splash Screen
 
-Uygulamada 1 sn lik bir bekleme yapıp Login Ekranına yönlendirilir.
+Uygulamada 3 sn lik bir bekleme yapılır. Ardından üye girişi ekranına yönlendirilir.
 
 
-image::rsm_splash.png[splash,180,320,align="center"]
+image::splasscreen.png[splash,180,320,align="center"]
 
 
 == Login
