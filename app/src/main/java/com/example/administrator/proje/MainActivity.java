@@ -38,24 +38,12 @@ public class MainActivity extends AppCompatActivity {
     private EditText password;
     protected String enteredUsername;
     private final String serverUrl = "http://bitir.me/mobil/";
-    private TextView textView;
-    private Button button;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        textView = (TextView) findViewById(R.id.textView2);
-        String msg = "Instructions: \n "
-                + "0. New instance (onCreate, onStart, onResume) \n "
-                + "1. Back Arrow (onPause, onStop, onDestroy) \n "
-                + "2. Finish (onPause, onStop, onDestroy) \n "
-                + "3. Home (onPause, onStop) \n ";
-        textView.setText(msg);
-        button = (Button) findViewById(R.id.button1);
         username = (EditText)findViewById(R.id.username_field);
         password = (EditText)findViewById(R.id.password_field);
         Button loginButton = (Button)findViewById(R.id.login);
@@ -64,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 enteredUsername = username.getText().toString();
                 String enteredPassword = password.getText().toString();
 
@@ -89,43 +76,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-        Toast.makeText(getApplicationContext(), "onCreate", 1).show();
-    }
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Toast.makeText(this, "onPause", 1).show();
-    }
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Toast.makeText(this, "onRestart", 1).show();
-    }
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Toast.makeText(this, "onResume", 1).show();
-    }
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Toast.makeText(this, "onStart", 1).show();
-    }
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Toast.makeText(this, "onDestroy", 1).show();
-    }
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Toast.makeText(this, "onStop", 1).show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -227,5 +177,3 @@ public class MainActivity extends AppCompatActivity {
         return returnedResult;
     }
 }
-
-
