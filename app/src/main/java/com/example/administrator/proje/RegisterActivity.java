@@ -1,4 +1,4 @@
-package com.example.administrator.proje;
+package com.example.erdogan.kullanici_hesabi;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -10,8 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.example.erdogan.kullanici_hesabi.R;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -177,3 +175,4 @@ public class RegisterActivity extends ActionBarActivity {
         return returnedResult;
     }
 }
+
