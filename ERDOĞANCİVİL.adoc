@@ -40,3 +40,10 @@ public class SplashActivity extends Activity {
 
 }
 -----
+
+
+=== 2)Web Servis
+
+2. Web Servis web üzerinden HTTP protokolü ile hizmet veren program parçalarıdır. 
+
+Ben web servis'i php olarak yazdım. Projede bulunan web servis klasörü içinde bu php kodlarına erişebilirsiniz.
