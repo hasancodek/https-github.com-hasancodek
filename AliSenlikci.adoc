@@ -9,7 +9,7 @@
 
 === WEB SERVİS
 
-1. Uygulama bilgileri siteden kontrol etmeye yarar.Bu işlemi rest komutu ile yapılmıştır
+1. Uygulamada bilgileri siteye gönderilir, sitede bilgiler işlenir ve tekrar uygulamaya gönderilir.  
 
 [source , java  ]
 -----
