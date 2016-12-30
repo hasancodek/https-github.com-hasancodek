@@ -4,6 +4,7 @@
 
 
 ==== Özet :
+      Not:Yapılan uygulama hata bulunamadı https://github.com/120201047/KullaniciHesabi12.git hesapda proje sorunsuz çalışmaktadır
       Yapılan uygulama basit bir Login uygulamasıdır. Buna göre kullanıcı, kullanıcı adını ve şifresini doğru
    girerse basit bir hoşgeldiniz ekranı kullanıcıyı karşılar. Eğer kullanıcının tanımlı bir hesabı yoksa 
    yeni bir hesap oluşturabilir. Yeni hesap oluşturduğu zaman login kısmında olduğu yine bir hoşgeldiniz 
