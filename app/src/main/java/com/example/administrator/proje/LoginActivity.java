@@ -1,4 +1,4 @@
-package com.example.administrator.proje.;
+package com.example.administrator.proje;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;

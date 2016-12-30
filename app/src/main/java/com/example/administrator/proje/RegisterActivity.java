@@ -1,4 +1,4 @@
-package com.example.administrator.proje.;
+package com.example.administrator.proje;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;

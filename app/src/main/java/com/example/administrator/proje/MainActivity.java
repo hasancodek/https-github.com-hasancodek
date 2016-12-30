@@ -1,4 +1,4 @@
-package com.example.administrator.proje.;
+package com.example.administrator.proje;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -32,7 +32,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import android.widget.Toast;
 public class MainActivity extends ActionBarActivity {
 
     protected EditText username;
@@ -46,6 +45,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
 
