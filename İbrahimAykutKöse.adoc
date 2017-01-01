@@ -9,7 +9,7 @@
 
 === 1)Bundle
 
-1. Bundle android activityler arası veri alış verişini sağlayan yapıdır.
+1. Bundle android activityler arası veri alış verişi yapılırken kullanılan yapıdır. Bundle ile veriler paketlenir, daha sonra Intent yapısı ile activityler arasında veri alış verişi gerçekleşir.
 
 [source , java  ]
 -----
