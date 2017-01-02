@@ -76,3 +76,96 @@ class DbConnect{
 	
 }
 -----
+
+Yukarıdaki kod parçası veritabanı bağlantısını sağlar. Bağlantı olmaması durumunda hata verir.
+
+
+[source , php  ]
+-----
+<?php
+require_once 'include/user.php';
+$username = "";
+$password = "";
+$email = "";
+if(isset($_POST['kAdi'])){
+$kAdi = $_POST['kAdi'];
+}
+if(isset($_POST['sifre'])){
+$sifre = $_POST['sifre'];
+}
+if(isset($_POST['email'])){
+$email = $_POST['email'];
+}
+// Instance of a User class
+$userObject = new User();
+// Registration of new user
+if(!empty($kAdi) && !empty($sifre) && !empty($email)){
+$hashed_sifre = md5($sifre);
+$json_registration = $userObject->createNewRegisterUser($kAdi, $hashed_sifre, $email);
+echo json_encode($json_registration);
+}
+// User Login
+if(!empty($kAdi) && !empty($sifre) && empty($email)){
+$hashed_sifre = md5($sifre);
+$json_array = $userObject->loginUsers($kAdi, $hashed_sifre);
+echo json_encode($json_array);
+}
+?>
+-----
+
+Yukarıdaki kod parçası değişken tanımlamalarının kontrolünü yapar. Ve kullanıcı parolasının şifrelendiği kısmı içeririr.
+
+[source , php  ]
+-----
+<?php
+include_once 'db.php';
+class User{
+	
+	private $db;
+	private $db_table = "kullanici";
+	
+	public function __construct(){
+		$this->db = new DbConnect();
+	}
+	
+	public function isLoginExist($kAdi, $sifre){		
+				
+		$query = "select * from " . $this->db_table . " where kAdi = '$kAdi' AND sifre = '$sifre' Limit 1";
+		$result = mysqli_query($this->db->getDb(), $query);
+		if(mysqli_num_rows($result) > 0){
+			mysqli_close($this->db->getDb());
+			return true;
+		}		
+		mysqli_close($this->db->getDb());
+		return false;		
+	}
+	
+	public function createNewRegisterUser($kAdi, $sifre, $email){
+			
+		$query = "insert into kullanici ( kAdi, sifre, email, kayit_tarihi) values ('$kAdi', '$sifre', '$email', NOW())";
+		$inserted = mysqli_query($this->db->getDb(), $query);
+		if($inserted == 1){
+			$json['success'] = 1;									
+		}else{
+			$json['success'] = 0;
+		}
+		mysqli_close($this->db->getDb());
+		return $json;
+	}
+	
+	public function loginUsers($kAdi, $sifre){
+			
+		$json = array();
+		$canUserLogin = $this->isLoginExist($kAdi, $sifre);
+		if($canUserLogin){
+			$json['success'] = 1;
+		}else{
+			$json['success'] = 0;
+		}
+		return $json;
+	}
+}
+?>
+-----
+
+Yukarıdaki kod parçası da kullanıcıya ait bilgilerin kontrol edildiği, yeni kullanıcı kaydı oluşrulduğu kısımları içerir.
