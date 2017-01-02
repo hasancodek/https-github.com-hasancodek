@@ -176,4 +176,4 @@ class User{
 ?>
 -----
 
-Yukarıdaki kod parçası da kullanıcıya ait bilgilerin kontrol edildiği, yeni kullanıcı kaydı oluşrulduğu kısımları içerir.
+Yukarıdaki kod parçası da kullanıcıya ait bilgilerin kontrol edildiği, yeni kullanıcı kaydı oluşturulduğu kısımları içerir.
