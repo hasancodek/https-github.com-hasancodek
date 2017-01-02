@@ -1,5 +1,13 @@
 = Erdoğan CİVİL
 
+== Ortaklar;
+1. Hasan ÇÖDEK -130201066
+2. İbrahim Aykut KÖSE 130201046
+3. Ali ŞENLİKÇİ 120201047
+4. Zeynep ÇELİK 110201070
+
+Adres:https://github.com/120201047/Proje
+
 == Projede Yaptıklarım
 
 
